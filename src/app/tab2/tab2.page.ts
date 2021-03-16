@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
+  tebak
+  random : number;
+  pathfoto = ""
   constructor() {}
-
+  guess(){
+   this.random = Math.floor(Math.random() * 10);
+   alert(this.random)
+    if(this.tebak==this.random){
+      this.pathfoto = "foto.jpg"
+      console.log("Bener");
+    }
+  }
 }
